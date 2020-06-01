@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="releases-heading">
+        <h1>Results from GYPHY</h1>
+    </div>
+    <div class="items-container row">
+        <app-item *ngFor='let item of items | filter:searchTerm:"title"' [imageUrl]=item.imageUrl></app-item>
+    </div>
+</div>
